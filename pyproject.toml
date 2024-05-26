@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bootcamp-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["icaroperetti <icaroperetti50@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.1"
+fastapi = "^0.111.0"
+loguru = "^0.7.2"
+sqlalchemy = "^2.0.30"
+pytest-mock = "^3.14.0"
+openai = "^0.27.9"
+chromadb = "^0.4.7"
+tiktoken = "^0.4.0"
+python-dotenv = "^1.0.0"
+python-magic-bin = "^0.4.14"
+langchain-community = "^0.0.38"
+unstructured = "^0.10.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "uvicorn app.main:app --reload"
